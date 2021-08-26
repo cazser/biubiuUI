@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/cazser/biubiuUI/issues"
   },
-  "homepage": "https://github.com/cazser/biubiuUI#readme"
+  "homepage": "https://github.com/cazser/biubiuUI#readme",
+  "dependencies": {
+    "vue": "^2.6.14"
+  }
 }
