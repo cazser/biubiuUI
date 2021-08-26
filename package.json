@@ -1,0 +1,20 @@
+{
+  "name": "biubiuUI",
+  "version": "1.0.0",
+  "description": "biubiuUI一个基于Vue的UI框架",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cazser/biubiuUI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cazser/biubiuUI/issues"
+  },
+  "homepage": "https://github.com/cazser/biubiuUI#readme"
+}
