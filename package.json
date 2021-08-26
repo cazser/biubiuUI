@@ -19,5 +19,8 @@
   "homepage": "https://github.com/cazser/biubiuUI#readme",
   "dependencies": {
     "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
   }
 }
