@@ -9,7 +9,7 @@ export default {
 
 </script>
 
-<style lang="scss">
+<style lang="css">
  
     .biu-button {
         height: var(--button-height);
@@ -19,19 +19,20 @@ export default {
         border-radius: var(--border-radius);
         border: 1px solid var(--border-color);
         background: var(--button-bg);
+    }
 	
-	&:hover {
+	.biu-button:hover {
         border-color: var(--button-color-hover);
    	}
     
-    	&:active {
+    .biu-button:active {
     	    background-color: var(--button-active-bg);
-    	}
-    
-    	&:focus {
-    	    outline: none;
-    	}
     }
+    
+    .biu-button:focus {
+    	    outline: none;
+    }
+    
     
    
 </style>

@@ -1,5 +1,5 @@
- import Vue from 'vue'
- import Button from './button'
+
+ import Button from './button.vue'
  Vue.component('biu-button', Button);
  new Vue({
          el: '#app',
@@ -9,3 +9,6 @@
      }
 
  )
+
+
+ console.log("app")
