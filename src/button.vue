@@ -30,11 +30,14 @@ export default {
         display: inline-flex;
         justify-content: center;
         align-items: center;
+        vertical-align: middle;
         border-radius: var(--border-radius);
         border: 1px solid var(--border-color);
         background: var(--button-bg);
+        
         >.icon{
             order:1;
+            margin-right: .3em;
         }
 
         >.content{
@@ -46,6 +49,8 @@ export default {
             }
             >.icon{
                 order: 2;
+                margin-left: .3em;
+                margin-right: 0;
             }
         }
     }
