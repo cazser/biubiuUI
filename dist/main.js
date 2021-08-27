@@ -116,7 +116,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n//\n//\n//\n//\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n\n});\n\n\n\n//# sourceURL=webpack://biubiuUI/./src/button.vue?./node_modules/vue-loader/lib/index.js??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n    props: ['icon', 'iconPosition']\n});\n\n\n\n//# sourceURL=webpack://biubiuUI/./src/button.vue?./node_modules/vue-loader/lib/index.js??vue-loader-options");
 
 /***/ }),
 
@@ -156,7 +156,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => (/* binding */ render),\n/* harmony export */   \"staticRenderFns\": () => (/* binding */ staticRenderFns)\n/* harmony export */ });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"button\", { staticClass: \"biu-button\" }, [_vm._v(\"hi\")])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack://biubiuUI/./src/button.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => (/* binding */ render),\n/* harmony export */   \"staticRenderFns\": () => (/* binding */ staticRenderFns)\n/* harmony export */ });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"div\", [\n    !_vm.iconPosition || _vm.iconPosition === \"left\"\n      ? _c(\n          \"button\",\n          { staticClass: \"biu-button\" },\n          [\n            _vm.icon\n              ? _c(\"svg\", { staticClass: \"icon\" }, [\n                  _c(\"use\", { attrs: { \"xlink:href\": \"#i-\" + _vm.icon } })\n                ])\n              : _vm._e(),\n            _vm._v(\" \"),\n            _vm._t(\"default\")\n          ],\n          2\n        )\n      : _c(\n          \"button\",\n          { staticClass: \"biu-button\" },\n          [\n            _vm._t(\"default\"),\n            _vm._v(\" \"),\n            _vm.icon\n              ? _c(\"svg\", { staticClass: \"icon\" }, [\n                  _c(\"use\", { attrs: { \"xlink:href\": \"#i-\" + _vm.icon } })\n                ])\n              : _vm._e()\n          ],\n          2\n        )\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack://biubiuUI/./src/button.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options");
 
 /***/ }),
 
@@ -176,7 +176,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _button_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./button.vue */ \"./src/button.vue\");\n\r\n \r\n Vue.component('biu-button', _button_vue__WEBPACK_IMPORTED_MODULE_0__.default);\r\n new Vue({\r\n         el: '#app',\r\n         data: {\r\n             message: 'hi'\r\n         }\r\n     }\r\n\r\n )\r\n\r\n\r\n console.log(\"app\")\n\n//# sourceURL=webpack://biubiuUI/./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _button_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./button.vue */ \"./src/button.vue\");\n\r\n \r\n \r\n Vue.component('biu-button', _button_vue__WEBPACK_IMPORTED_MODULE_0__.default);\r\n new Vue({\r\n         el: '#app',\r\n         data: {\r\n             message: 'hi'\r\n         }\r\n     }\r\n\r\n )\r\n\r\n\r\n\n\n//# sourceURL=webpack://biubiuUI/./src/app.js?");
 
 /***/ })
 

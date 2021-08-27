@@ -1,10 +1,25 @@
 <template>
-	<button class="biu-button">hi</button>
+    <div>
+	<button class="biu-button" v-if="!iconPosition || iconPosition==='left'">
+         <svg v-if="icon" class="icon">
+                <use :xlink:href="`#i-${icon}`"></use>
+            </svg>
+        <slot>
+        </slot>
+    </button>
+    <button class="biu-button" v-else>
+        <slot></slot>
+        <svg v-if="icon" class="icon">
+            <use :xlink:href="`#i-${icon}`"></use>
+        </svg>
+       
+    </button>
+    </div>
 </template>
 
 <script>
 export default {
-
+    props: ['icon', 'iconPosition']
 }
 
 </script>
