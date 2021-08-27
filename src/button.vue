@@ -17,7 +17,14 @@
 export default {
     props: {icon:{}, iconPosition:{
         type: String,
-        default: "left"
+        default: "left",
+        validator(value){
+            if(value!== "left" && value!=="right"){
+                return false;
+            }else{
+                return true;
+            }
+        }
     }}
 }
 
