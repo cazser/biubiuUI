@@ -46,10 +46,13 @@
 
 <body>
     <div id="app">
+        <div>
+            <biu-button icon="settings" icon-position="right" :loading="loading1" @click="loading1 = !loading1">
+                杜晓琳</biu-button>
+            <biu-button :loading="true">something</biu-button>
 
-        <biu-button icon="settings" icon-position="right">杜晓琳</biu-button>
-
-        {{message}}
+            {{ message }}
+        </div>
     </div>
 </body>
 <script src="./node_modules/vue/dist/vue.min.js"></script>

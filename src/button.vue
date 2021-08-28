@@ -1,9 +1,9 @@
 <template>
     <div>
-	<button class="biu-button" :class="{[`icon-${iconPosition}`]:true}">
+	<button class="biu-button" :class="{[`icon-${iconPosition}`]:true}" @click="$emit('click')" >
 
-        <biu-icon class="icon" v-if="icon" :name="icon"></biu-icon>
-        <biu-icon class="loading" name="loading"></biu-icon>
+        <biu-icon class="icon" v-if="icon && !loading" :name="icon"></biu-icon>
+        <biu-icon v-if="loading" class="loading icon" name="loading"></biu-icon>
         <div class="content">
         <slot>
         </slot>
@@ -15,7 +15,13 @@
 
 <script>
 export default {
-    props: {icon:{}, iconPosition:{
+    props: {
+     icon:{},
+     loading: {
+         type: Boolean,
+         default: false
+     },
+     iconPosition:{
         type: String,
         default: "left",
         validator(value){

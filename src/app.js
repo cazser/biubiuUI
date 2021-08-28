@@ -5,7 +5,8 @@ Vue.component('biu-icon', Icon);
 new Vue({
         el: '#app',
         data: {
-            message: 'hi'
+            message: 'hi',
+            loading1: false
         }
     }
 
