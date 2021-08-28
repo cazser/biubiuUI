@@ -47,11 +47,10 @@
 <body>
     <div id="app">
         <div>
-            <biu-button icon="settings" icon-position="right" :loading="loading1" @click="loading1 = !loading1">
-                杜晓琳</biu-button>
-            <biu-button :loading="true">something</biu-button>
-
-            {{ message }}
+            <biu-button-group>
+                <biu-button icon="left">上一页</biu-button>
+                <biu-button icon="right" icon-position="right">下一页</biu-button>
+            </biu-button-group>
         </div>
     </div>
 </body>
