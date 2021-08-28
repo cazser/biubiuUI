@@ -14,3 +14,8 @@ new Vue({
     }
 
 )
+
+//单元测试
+{
+    const Constructor = Vue.extend(Button);
+}
