@@ -62,8 +62,8 @@ chai.use(spies)
             }
         });
         vm.$mount("#test")
-        let spy = chai.spy(() => {})
-        vm.$on('click', spy)
+        let spy = chai.spy(function() {})
+        vm.$on('click', spy())
         let button = vm.$el
         button.click();
         chai.expect(spy).to.have.been.called()
