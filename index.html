@@ -47,51 +47,12 @@
 <body>
     <div id="app">
         <biu-row>
-            <biu-col span="12"></biu-col>
-            <biu-col span="12"></biu-col>
+            <biu-col></biu-col>
+            <biu-col></biu-col>
         </biu-row>
     </div>
     <div id="test">
 
-        <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-        </div>
-        <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
-        </div>
-        <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
-        </div>
-        <div class="row">
-            <div class="col" data-span="2"></div>
-            <div class="col" data-span="22"></div>
-        </div>
-        <style>
-            .row {
-                display: flex;
-            }
-            
-            .col {
-                height: 100px;
-                width: 50%;
-                background-color: green;
-                border: 10px solid red;
-            }
-            
-            .col[data-span='2'] {
-                width: 8.3333%;
-            }
-            
-            .col[data-span='22'] {
-                width: 91.6667%;
-            }
-        </style>
     </div>
 </body>
 <script src="./node_modules/vue/dist/vue.min.js"></script>
