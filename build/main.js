@@ -684,7 +684,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n//\n//\n//\n//\n//\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\r\n\r\n});\r\n\n\n//# sourceURL=webpack://biubiuUI/./src/col.vue?./node_modules/vue-loader/lib/index.js??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n//\n//\n//\n//\n//\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\r\n\tname:\"biuCol\",\r\n\tprops:{\r\n\t   span:{\r\n\t     type: [Number, String]\r\n\t   }\t\t\r\n\t}\r\n});\r\n\n\n//# sourceURL=webpack://biubiuUI/./src/col.vue?./node_modules/vue-loader/lib/index.js??vue-loader-options");
 
 /***/ }),
 
