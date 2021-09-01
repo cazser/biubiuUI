@@ -794,7 +794,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n//\n//\n//\n//\n//\n\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\r\nname: \"toast\"\r\n\r\n});\r\n\n\n//# sourceURL=webpack://biubiuUI/./src/toast.vue?./node_modules/vue-loader/lib/index.js??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n//\n//\n//\n//\n//\n\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\r\nname: \"toast\",\r\nprops:{\r\n autoClose:{\r\n\t type:Boolean,\r\n \tdefault: true\r\n},\r\nautoCloseDelay:{\r\n\ttype: Number,\r\n\tdefault: 5\r\n}\r\n},\r\nmounted(){\r\n\tif(this.autoClose){\r\n\tsetTimeout(()=>{\r\n\t\tthis.close()\r\n\t}, this.autoCloseDelay*1000)\r\n\t}\r\n},\r\nmethods:{\r\n close(){\r\nthis.$el.remove();\r\nthis.$destroy();\t \r\n }\r\n}\r\n\r\n});\r\n\n\n//# sourceURL=webpack://biubiuUI/./src/toast.vue?./node_modules/vue-loader/lib/index.js??vue-loader-options");
 
 /***/ }),
 
