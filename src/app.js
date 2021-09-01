@@ -24,12 +24,17 @@ new Vue({
             message: 'hi',
             loading1: false
         },
-        methods: {
-            showToast() {
-                this.$toast("show toast")
-            }
-        },
-        created() {}
+        methods: {},
+        created() {
+            this.$toast('我是message', {
+                closeButton: {
+                    text: "关闭",
+                    callback(toast) {
+                        toast.log();
+                    }
+                }
+            })
+        }
     }
 
 )

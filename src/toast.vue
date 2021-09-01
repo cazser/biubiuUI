@@ -25,9 +25,7 @@ type: Object,
 default: ()=>{
 return{
 	text: "关闭",
-	callback(toast){
-	toast.close();
-	}
+	callback: undefined
 }
 }
 }
@@ -46,7 +44,12 @@ this.$destroy();
  },
  onClickClose(){
 	 this.close();
-	 this.closeButton.callback();
+	 if(this.closeButton && typeof this.closeButton.callback==='function'){
+	 this.closeButton.callback(this);
+	 }
+ },
+ log(){
+	 console.log("测试")
  }
 }
 
