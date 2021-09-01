@@ -2,7 +2,9 @@
 	<div class="toast">
 	 <slot></slot>
 		<div class="line"></div>
-	 <span class="close" v-if="closeButton"> {{closeButton.text}}</span>
+	 <span class="close" v-if="closeButton"
+	       @click="onClickClose"> 
+	 {{closeButton.text}}</span>
 	</div>
 </template>
 <script>
@@ -41,6 +43,10 @@ methods:{
  close(){
 this.$el.remove();
 this.$destroy();	 
+ },
+ onClickClose(){
+	 this.close();
+	 this.closeButton.callback();
  }
 }
 
