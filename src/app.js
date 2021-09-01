@@ -7,7 +7,7 @@ import Col from './col.vue'
 import Toast from './toast.vue'
 import chai from 'chai';
 import spies from 'chai-spies'
-
+import plugin from './plugin.js'
 
 //import Vue from 'vue';
 Vue.component('biu-button', Button);
@@ -17,15 +17,19 @@ Vue.component('biu-input', Input)
 Vue.component('biu-row', Row);
 Vue.component('biu-col', Col);
 Vue.component('biu-toast', Toast);
+Vue.use(plugin)
 new Vue({
         el: '#app',
         data: {
             message: 'hi',
             loading1: false
         },
-        created() {
-            this.$toast("弹出toast")
-        }
+        methods: {
+            showToast() {
+                this.$toast("show toast")
+            }
+        },
+        created() {}
     }
 
 )
