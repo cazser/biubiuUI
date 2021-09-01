@@ -1,6 +1,8 @@
 <template>
 	<div class="toast">
 	 <slot></slot>
+		<div class="line"></div>
+	 <span class="close" v-if="closeButton"> {{closeButton.text}}</span>
 	</div>
 </template>
 <script>
@@ -15,6 +17,17 @@ props:{
 autoCloseDelay:{
 	type: Number,
 	default: 5
+},
+closeButton:{
+type: Object,
+default: ()=>{
+return{
+	text: "关闭",
+	callback(toast){
+	toast.close();
+	}
+}
+}
 }
 },
 mounted(){
@@ -54,4 +67,13 @@ this.$destroy();
      padding: 0 16px;
   }
 
+	.close{
+		padding: 16px;
+	}
+
+	.line{
+		height:100%;
+		border: 1px solid #666;
+		margin-left: 16px;
+	}
 </style>
