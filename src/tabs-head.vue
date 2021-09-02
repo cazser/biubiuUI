@@ -1,16 +1,18 @@
 <template>
-	<div class="tabs-header">
+	<div class='tabs-head'>
+	<slot></slot>
 	</div>
 </template>
 <script>
 export default{
-name:'tabs-header'
+name:'tabs-head'
 
 };
 </script>
 <style scoped>
-.tabs-header{
-	
+.tabs-head{
+
 }
+
 
 </style>

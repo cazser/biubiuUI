@@ -1,5 +1,6 @@
 <template>
-	<div class='tabs-pane'>
+	<div class="tabs-pane">
+	 <slot></slot>
 	</div>
 </template>
 <script>

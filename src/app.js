@@ -9,10 +9,10 @@ import chai from 'chai';
 import spies from 'chai-spies'
 import plugin from './plugin.js'
 import Tabs from './tabs.vue'
-import TabsHeader from './tabs-header.vue'
+import TabsHead from './tabs-head.vue'
 import TabsBody from './tabs-body.vue'
 import TabsItem from './tabs-item.vue'
-import TabsPane from ',/tabs-pane.vue'
+import TabsPane from './tabs-pane.vue'
 
 //import Vue from 'vue';
 Vue.component('biu-button', Button);
@@ -23,7 +23,7 @@ Vue.component('biu-row', Row);
 Vue.component('biu-col', Col);
 Vue.component('biu-toast', Toast);
 Vue.component('biu-tabs', Tabs);
-Vue.component('biu-tabs-header', TabsHeader);
+Vue.component('biu-tabs-head', TabsHead);
 Vue.component('biu-tabs-body', TabsBody);
 Vue.component('biu-tabs-item', TabsItem);
 Vue.component('biu-tabs-pane', TabsPane)
@@ -32,7 +32,8 @@ new Vue({
         el: '#app',
         data: {
             message: 'hi',
-            loading1: false
+            loading1: false,
+            selectedTab: "sports"
         },
         methods: {
             showToast() {

@@ -46,7 +46,30 @@
 
 <body>
     <div id="app">
-        <button @click="showToast">showtoast</button>
+        <biu-tabs :selected.sync="selectedTab">
+            <biu-tabs-head>
+                <biu-tabs-item name="woman">
+                    美女
+                </biu-tabs-item>
+                <biu-tabs-item name="finance">
+                    财经
+                </biu-tabs-item>
+                <biu-tabs-item name="sports">
+                    体育
+                </biu-tabs-item>
+            </biu-tabs-head>
+            <biu-tabs-body>
+                <biu-tabs-pane name="woman">
+                    美女相关资讯
+                </biu-tabs-pane>
+                <biu-tabs-pane name="finance">
+                    财经相关资讯
+                </biu-tabs-pane>
+                <biu-tabs-pane name="sports">
+                    体育相关资讯
+                </biu-tabs-pane>
+            </biu-tabs-body>
+        </biu-tabs>
     </div>
     <div id="test">
 

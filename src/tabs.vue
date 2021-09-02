@@ -5,7 +5,16 @@
 </template>
 <script>
 export default{
-name:'tabs'
+name:'tabs',
+props:{
+	selected:{
+	type: String,
+	required: true
+	}
+},
+created(){
+	//this.$emit("update:select", "xxx")
+}
 
 };
 </script>
