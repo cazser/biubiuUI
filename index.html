@@ -48,10 +48,13 @@
     <div id="app">
         <biu-tabs :selected.sync="selectedTab">
             <biu-tabs-head>
+                <template slot="actions">
+                    <button>设置</button>
+                </template>
                 <biu-tabs-item name="woman">
                     美女
                 </biu-tabs-item>
-                <biu-tabs-item name="finance">
+                <biu-tabs-item name="finance" disabled>
                     财经
                 </biu-tabs-item>
                 <biu-tabs-item name="sports">
