@@ -1,7 +1,8 @@
 <template>
-	<div class="toast">
-	 <slot></slot>
-		<div class="line"></div>
+	<div class="toast" ref="toast">
+	<slot v-if="!enableHtml"></slot>
+	 <div v-html="$slots.default[0]"></div>
+		<div class="line" ref="line"></div>
 	 <span class="close" v-if="closeButton"
 	       @click="onClickClose"> 
 	 {{closeButton.text}}</span>
@@ -28,6 +29,10 @@ return{
 	callback: undefined
 }
 }
+},
+enableHtml:{
+	type: Boolean,
+	default: false
 }
 },
 mounted(){
@@ -36,6 +41,10 @@ mounted(){
 		this.close()
 	}, this.autoCloseDelay*1000)
 	}
+	this.$nextTick(()=>{
+		this.$refs.line.style.height =
+		`${this.$refs.toast.getBoundingClientRect().height}px`;
+	})
 },
 methods:{
  close(){
@@ -57,7 +66,7 @@ this.$destroy();
 </script>
 <style scoped lang="scss">
 	$font-size: 14px;
-	$toast-height: 40px;
+	$toast-min-height: 40px;
 	$toast-bg:  rgba(0,0,0,0.75);
   .toast{
      position: fixed;
@@ -66,7 +75,7 @@ this.$destroy();
      transform: translateX(-50%);
      font-size: $font-size;
      line-height: 1.8;
-     height: $toast-height;
+     min-height: $toast-min-height;
      display: flex;
      align-items: center;
      background: $toast-bg;
@@ -78,6 +87,7 @@ this.$destroy();
 
 	.close{
 		padding: 16px;
+		flex-shrink: 0;
 	}
 
 	.line{

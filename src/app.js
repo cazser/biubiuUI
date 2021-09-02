@@ -26,13 +26,10 @@ new Vue({
         },
         methods: {},
         created() {
-            this.$toast('我是message', {
-                closeButton: {
-                    text: "关闭",
-                    callback(toast) {
-                        toast.log();
-                    }
-                }
+            this.$toast(`很多文字
+            很多文字很多文字很多文字很多文字 很多文字很多文字很多文字很多文字
+            `, {
+
             })
         }
     }
