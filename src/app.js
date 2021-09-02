@@ -26,11 +26,17 @@ new Vue({
         },
         methods: {},
         created() {
-            this.$toast(`很多文字
-            很多文字很多文字很多文字很多文字 很多文字很多文字很多文字很多文字
-            `, {
-
-            })
+            this.$toast(
+                "您的智商需要充值", {
+                    position: "bottom",
+                    closeButton: {
+                        text: "充值",
+                        callback() {
+                            console.log('他说已经充值了');
+                        }
+                    },
+                    autoClose: false
+                })
         }
     }
 
