@@ -2,7 +2,7 @@
 	<div class="toast" ref="toast" :class="toastClasses">
 	<div class="message">
 	<slot v-if="!enableHtml"></slot>
-	 <div v-html="$slots.default[0]"></div>
+	 <div v-if="enableHtml" v-html="$slots.default[0]"></div>
 	</div>
 		<div class="line" ref="line"></div>
 	 <span class="close" v-if="closeButton"

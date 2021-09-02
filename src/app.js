@@ -24,20 +24,23 @@ new Vue({
             message: 'hi',
             loading1: false
         },
-        methods: {},
-        created() {
-            this.$toast(
-                "您的智商需要充值", {
-                    position: "bottom",
-                    closeButton: {
-                        text: "充值",
-                        callback() {
-                            console.log('他说已经充值了');
-                        }
-                    },
-                    autoClose: false
-                })
-        }
+        methods: {
+            showToast() {
+                this.$toast(
+                    `您的智商目前为${Number.parseInt(Math.random()*100)}您的智商需要充值`, {
+                        position: "bottom",
+                        closeButton: {
+                            text: "充值",
+                            callback() {
+                                console.log('他说已经充值了');
+                            }
+                        },
+                        autoClose: false
+                    })
+
+            }
+        },
+        created() {}
     }
 
 )
