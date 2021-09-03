@@ -1,5 +1,5 @@
 <template>
-	<div class='tabs-item' @click="xxx">
+	<div class='tabs-item' @click="xxx" :class="classes">
 	<slot></slot>
 	</div>
 </template>
@@ -17,11 +17,22 @@ props:{
  }
 },
 inject: ['b'],
-
+data(){
+	return {active: false}
+},
 created(){
 	this.b.$on("update:selected", (name)=>{
-		console.log(name)
+		if(name===this.name){
+			this.active = true;
+		}else{
+		this.active = false;
+		}
 	})
+},
+computed:{
+	classes(){
+		return {active:this.active}
+	}
 },
 methods:{
 	xxx(){
@@ -31,9 +42,14 @@ methods:{
 
 };
 </script>
-<style scoped>
+<style scoped
+ lang="scss">
 .tabs-item{
-
+padding: 0 2em;
+flex-shrink: 0;
+&.active{
+	background: red;
+}
 }
 
 

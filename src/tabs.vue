@@ -23,6 +23,10 @@ props:{
 created(){
 	//this.$emit("update:select", "xxx")
 },
+mounted(){
+console.log(this.selected);
+this.eventBus.$emit("update:select",this.selected)
+},
 data(){
 	 return {eventBus: new Vue()}
 },
