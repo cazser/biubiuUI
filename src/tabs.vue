@@ -25,7 +25,7 @@ created(){
 },
 mounted(){
 console.log(this.selected);
-this.eventBus.$emit("update:select",this.selected)
+this.eventBus.$emit("update:selected",this.selected)
 },
 data(){
 	 return {eventBus: new Vue()}
