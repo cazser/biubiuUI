@@ -13,6 +13,8 @@ import TabsHead from './tabs-head.vue'
 import TabsBody from './tabs-body.vue'
 import TabsItem from './tabs-item.vue'
 import TabsPane from './tabs-pane.vue'
+import Test from './test.vue'
+import TestIn from './test-in.vue'
 
 //import Vue from 'vue';
 Vue.component('biu-button', Button);
@@ -26,7 +28,9 @@ Vue.component('biu-tabs', Tabs);
 Vue.component('biu-tabs-head', TabsHead);
 Vue.component('biu-tabs-body', TabsBody);
 Vue.component('biu-tabs-item', TabsItem);
-Vue.component('biu-tabs-pane', TabsPane)
+Vue.component('biu-tabs-pane', TabsPane);
+Vue.component('test', Test);
+Vue.component('test-in', TestIn)
 Vue.use(plugin)
 new Vue({
         el: '#app',

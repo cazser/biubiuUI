@@ -5,8 +5,11 @@
 </template>
 <script>
 export default{
-name:'tabs-body'
+name:'tabs-body',
+inject: ['b'],
 
+created(){
+}
 };
 </script>
 <style scoped>

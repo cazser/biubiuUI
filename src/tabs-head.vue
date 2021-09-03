@@ -6,7 +6,11 @@
 </template>
 <script>
 export default{
-name:'tabs-head'
+name:'tabs-head',
+inject: ['b'],
+
+created(){
+}
 
 };
 </script>

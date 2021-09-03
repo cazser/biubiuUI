@@ -4,6 +4,7 @@
 	</div>
 </template>
 <script>
+
 export default{
 name:'tabs',
 props:{
@@ -21,8 +22,18 @@ props:{
 },
 created(){
 	//this.$emit("update:select", "xxx")
-}
+},
+data(){
+	 return {eventBus: new Vue()}
+},
+provide(){
+	return{
+	 b: this.eventBus
+	}
 
+},
+methods:{
+}
 };
 </script>
 <style scoped>
