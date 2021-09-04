@@ -23,9 +23,14 @@ $height: 40px;
 	height: $height;
 	justify-content: flex-start;
 	align-items: center;
-	border: 1px solid red;
+	border-bottom: 1px solid grey;
+
 >.actions-wrapper{
 	margin-left: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 1em;
 }
 }
 
