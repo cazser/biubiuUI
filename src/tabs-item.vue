@@ -65,6 +65,7 @@ flex-direction: row;
 }
 &.disabled{
 	color: grey;
+	cursor: not-allowed;
 }
 }
 
