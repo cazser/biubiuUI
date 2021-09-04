@@ -44,17 +44,20 @@ methods:{
 </script>
 <style scoped
  lang="scss">
+ $blue: blue;
 .tabs-item{
 padding: 0 2em;
 flex-shrink: 0;
 cursor: pointer;
-border: 1px solid green;
+
 height: 100%;
 display: flex;
 align-items: center;
 flex-direction: row;
 &.active{
-	background: red;
+	color: $blue;
+	border-bottom: 2px solid $blue;
+	margin-bottom: -2px;
 }
 }
 
