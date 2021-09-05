@@ -5,7 +5,25 @@
 </template>
 <script>
 export default{
-name:'collapse'
+name:'collapse',
+data(){
+	return{
+		eventBus: new Vue()
+	}
+},
+props:{
+	single:{
+		type:Boolean,
+		default:false
+	}
+},
+provide(){
+	if(this.single){
+		return {
+		eB: this.eventBus
+		}
+	}
+}
 
 };
 </script>

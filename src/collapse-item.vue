@@ -1,6 +1,6 @@
 <template>
 	<div class='collapse-item'>
-		<div class="title" @click="open=!open">
+		<div class="title" @click="toggle">
 			{{title}}
 		</div>
 		<div class="content" v-if="open">
@@ -19,6 +19,27 @@ required: true
 },
 data(){
 	return {open: false}
+},
+mounted(){
+	this.eB && this.eB.$on('update:select', (vm)=>{
+		if(vm!==this){
+			this.close();
+		}
+	})
+},
+inject: ['eB'],
+methods:{
+	toggle(){
+	   if(this.open===true){
+		   this.open=false;
+	   }else{
+		   this.open = true;
+		   this.eB && this.eB.$emit('update:select', this)
+	   }
+	},
+	close(){
+		this.open = false;
+	}
 }
 
 };
