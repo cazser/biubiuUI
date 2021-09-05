@@ -16,6 +16,8 @@ import TabsPane from './tabs-pane.vue'
 import Test from './test.vue'
 import TestIn from './test-in.vue'
 import PopOver from './popover.vue'
+import Collapse from './collapse.vue'
+import CollapseItem from './collapse-item.vue'
 
 
 //import Vue from 'vue';
@@ -34,6 +36,8 @@ Vue.component('biu-tabs-pane', TabsPane);
 Vue.component('test', Test);
 Vue.component('test-in', TestIn)
 Vue.component('biu-popover', PopOver)
+Vue.component('biu-collapse', Collapse)
+Vue.component('biu-collapse-item', CollapseItem)
 Vue.use(plugin)
 new Vue({
         el: '#app',
