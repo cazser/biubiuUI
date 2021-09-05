@@ -15,6 +15,8 @@ import TabsItem from './tabs-item.vue'
 import TabsPane from './tabs-pane.vue'
 import Test from './test.vue'
 import TestIn from './test-in.vue'
+import PopOver from './popover.vue'
+
 
 //import Vue from 'vue';
 Vue.component('biu-button', Button);
@@ -31,6 +33,7 @@ Vue.component('biu-tabs-item', TabsItem);
 Vue.component('biu-tabs-pane', TabsPane);
 Vue.component('test', Test);
 Vue.component('test-in', TestIn)
+Vue.component('biu-popover', PopOver)
 Vue.use(plugin)
 new Vue({
         el: '#app',
@@ -40,20 +43,7 @@ new Vue({
             selectedTab: "sports"
         },
         methods: {
-            showToast() {
-                this.$toast(
-                    `您的智商目前为${Number.parseInt(Math.random()*100)}您的智商需要充值`, {
-                        position: "middle",
-                        closeButton: {
-                            text: "充值",
-                            callback() {
-                                console.log('他说已经充值了');
-                            }
-                        },
-                        autoClose: false
-                    })
 
-            }
         },
         created() {}
     }
